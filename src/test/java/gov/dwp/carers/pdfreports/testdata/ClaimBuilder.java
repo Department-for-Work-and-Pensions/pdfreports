@@ -1,4 +1,4 @@
-package gov.dwp.carers.pdfrenderer.testdata;
+package gov.dwp.carers.pdfreports.testdata;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

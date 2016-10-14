@@ -3,8 +3,8 @@ buildscript {
         springBootVersion = '1.4.0.RELEASE'
     }
     repositories {
-        jcenter()
-        mavenCentral()
+        mavenLocal()
+        //jcenter()
         maven {
             url "${artifactory_url}repo"
             credentials {
@@ -41,8 +41,8 @@ allprojects {
     apply plugin: 'maven-publish'
     apply plugin: 'spring-boot'
     apply plugin: 'com.github.gmazelier.jasperreports'
-    version = '3.05-SNAPSHOT'
-    archivesBaseName = 'p1'
+    version = '1.01-SNAPSHOT'
+    archivesBaseName = 'pdfreports'
     group = 'gov.dwp.carers'
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
@@ -65,7 +65,7 @@ artifactory {
             // Reference to Gradle publications defined in the build script.
             // This is how we tell the Artifactory Plugin which artifacts should be
             // published to Artifactory.
-            publications('mavenJava', 'distribution')
+            publications('mavenJava')
             publishArtifacts = true
             publishPom = true // Publish generated POM files to Artifactory (true by default)
         }
@@ -103,26 +103,28 @@ configurations.all {
     resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
 }
 
+//Project dependencies
 dependencies {
-    compile("net.sf.jasperreports:jasperreports:6.2.2")
-    compile("com.itextpdf:itextpdf:5.5.9")
-    compile("com.adobe.xmp:xmpcore:5.1.2")
-    compile("gov.dwp.carers:fonts:1.0")
-    compile("xalan:xalan:2.7.2")
-    compile("gov.dwp.carers:xmlcommons:8.22-SNAPSHOT")
-    compile("gov.dwp.carers:carerscommon:8.05-SNAPSHOT")
-    compile("org.springframework.boot:spring-boot-starter-web")
-    compile("org.springframework.boot:spring-boot-starter-jetty")
-    compile("org.springframework.boot:spring-boot-starter-data-rest")
-    compile("org.springframework.boot:spring-boot-starter-web")
-    compile("org.springframework.boot:spring-boot-starter-websocket")
-    compile("org.springframework.boot:spring-boot-devtools")
-    compile("net.sf.jasperreports:jasperreports-functions:6.2.2")
-    compile("org.springframework.boot:spring-boot-starter-actuator")
-    runtime("me.moocar:logback-gelf:0.3")
-    testCompile (
-            'org.springframework.boot:spring-boot-starter-test',
-            'org.assertj:assertj-core:3.2.0'
+    testCompile(
+            files('../pdfRenderer/build/classes/main'),
+            "net.sf.jasperreports:jasperreports:6.2.2",
+            "com.itextpdf:itextpdf:5.5.9",
+            "com.adobe.xmp:xmpcore:5.1.2",
+            "gov.dwp.carers:fonts:1.0",
+            "xalan:xalan:2.7.2",
+            "gov.dwp.carers:xmlcommons:8.22-SNAPSHOT",
+            "gov.dwp.carers:carerscommon:8.05-SNAPSHOT",
+            "org.springframework.boot:spring-boot-starter-web",
+            "org.springframework.boot:spring-boot-starter-jetty",
+            "org.springframework.boot:spring-boot-starter-data-rest",
+            "org.springframework.boot:spring-boot-starter-web",
+            "org.springframework.boot:spring-boot-starter-websocket",
+            "org.springframework.boot:spring-boot-devtools",
+            "net.sf.jasperreports:jasperreports-functions:6.2.2",
+            "org.springframework.boot:spring-boot-starter-actuator",
+            "me.moocar:logback-gelf:0.3",
+            "org.springframework.boot:spring-boot-starter-test",
+            "org.assertj:assertj-core:3.2.0"
     )
 }
 
@@ -136,11 +138,6 @@ publishing {
                 classifier = 'sources'
             }
 
-        }
-        distribution(MavenPublication) {
-            artifact ("${libsDir}/${archivesBaseName}-${version}-full.jar") {
-                classifier = 'full'
-            }
         }
     }
 }
@@ -177,10 +174,6 @@ processResources {
     exclude('**/*.jrxml')
 }
 
-bootRun {
-    addResources = true
-}
-
 jasperreports {
     srcDir = file("src/main/resources/config")
     tmpDir = file("${buildDir}/jasperreports")
@@ -196,11 +189,3 @@ jasperreports {
 
 compileJava.dependsOn(compileAllReports)
 
-def renameFile(oldName, newName) {
-    new File(oldName).renameTo(new File(newName))
-}
-
-bootRepackage.doLast {
-    renameFile("${libsDir}/${archivesBaseName}-${version}.jar", "${libsDir}/${archivesBaseName}-${version}-full.jar");
-    renameFile("${libsDir}/${archivesBaseName}-${version}.jar.original", "${libsDir}/${archivesBaseName}-${version}.jar");
-}
