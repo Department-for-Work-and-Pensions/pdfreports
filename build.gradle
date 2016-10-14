@@ -106,14 +106,14 @@ configurations.all {
 //Project dependencies
 dependencies {
     testCompile(
-            files('../pdfRenderer/build/classes/main'),
+            "gov.dwp.carers:p1:4.01-SNAPSHOT",
+            "gov.dwp.carers:fonts:1.0",
+            "gov.dwp.carers:xmlcommons:8.22-SNAPSHOT",
+            "gov.dwp.carers:carerscommon:8.05-SNAPSHOT",
             "net.sf.jasperreports:jasperreports:6.2.2",
             "com.itextpdf:itextpdf:5.5.9",
             "com.adobe.xmp:xmpcore:5.1.2",
-            "gov.dwp.carers:fonts:1.0",
             "xalan:xalan:2.7.2",
-            "gov.dwp.carers:xmlcommons:8.22-SNAPSHOT",
-            "gov.dwp.carers:carerscommon:8.05-SNAPSHOT",
             "org.springframework.boot:spring-boot-starter-web",
             "org.springframework.boot:spring-boot-starter-jetty",
             "org.springframework.boot:spring-boot-starter-data-rest",
