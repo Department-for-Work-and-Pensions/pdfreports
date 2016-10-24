@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.1.1.final using JasperReports Library version 6.1.1  -->
-<!-- 2016-06-24T09:46:23 -->
+<!-- 2016-10-24T11:21:12 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportNewCircsIdentification" pageWidth="595" pageHeight="802" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="c6f74d5c-3ede-442b-b8ca-8811e9f45c6e">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
@@ -17,11 +17,17 @@
 	<queryString language="xPath">
 		<![CDATA[/]]>
 	</queryString>
-	<field name="IdentificationFullNameQuestion" class="java.lang.String">
-		<fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/ClaimantDetails/FullName/QuestionLabel]]></fieldDescription>
+	<field name="IdentificationFirstNameQuestion" class="java.lang.String">
+		<fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/ClaimantDetails/OtherNames/QuestionLabel]]></fieldDescription>
 	</field>
-	<field name="IdentificationFullNameAnswer" class="java.lang.String">
-		<fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/ClaimantDetails/FullName/Answer]]></fieldDescription>
+	<field name="IdentificationFirstNameAnswer" class="java.lang.String">
+		<fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/ClaimantDetails/OtherNames/Answer]]></fieldDescription>
+	</field>
+	<field name="IdentificationSurnameQuestion" class="java.lang.String">
+		<fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/ClaimantDetails/Surname/QuestionLabel]]></fieldDescription>
+	</field>
+	<field name="IdentificationSurnameAnswer" class="java.lang.String">
+		<fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/ClaimantDetails/Surname/Answer]]></fieldDescription>
 	</field>
 	<field name="IdentificationDateOfBirthQuestion" class="java.lang.String">
 		<fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/ClaimantDetails/DateOfBirth/QuestionLabel]]></fieldDescription>
@@ -53,17 +59,23 @@
 	<field name="DeclarationWantsContactEmailAnswer" class="java.lang.String">
 		<fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/ClaimantDetails/WantsContactEmail/Answer]]></fieldDescription>
 	</field>
-	<field name="IdentificationCareeFullNameQuestion" class="java.lang.String">
-		<fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/CareeDetails/FullName/QuestionLabel]]></fieldDescription>
-	</field>
-	<field name="IdentificationCareeFullNameAnswer" class="java.lang.String">
-		<fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/CareeDetails/FullName/Answer]]></fieldDescription>
-	</field>
 	<field name="IdentificationCareeRelationToClaimantQuestion" class="java.lang.String">
 		<fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/CareeDetails/RelationToClaimant/QuestionLabel]]></fieldDescription>
 	</field>
 	<field name="IdentificationCareeRelationToClaimantAnswer" class="java.lang.String">
 		<fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/CareeDetails/RelationToClaimant/Answer]]></fieldDescription>
+	</field>
+    <field name="IdentificationCareeFirstNameQuestion" class="java.lang.String">
+        <fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/CareeDetails/OtherNames/QuestionLabel]]></fieldDescription>
+    </field>
+    <field name="IdentificationCareeFirstNameAnswer" class="java.lang.String">
+        <fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/CareeDetails/OtherNames/Answer]]></fieldDescription>
+    </field>
+	<field name="IdentificationCareeSurnameQuestion" class="java.lang.String">
+		<fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/CareeDetails/Surname/QuestionLabel]]></fieldDescription>
+	</field>
+	<field name="IdentificationCareeSurnameAnswer" class="java.lang.String">
+		<fieldDescription><![CDATA[/DWPBody/DWPCATransaction/DWPCAChangeOfCircumstances/CareeDetails/Surname/Answer]]></fieldDescription>
 	</field>
 	<background>
 		<band splitType="Stretch"/>
@@ -84,10 +96,10 @@
 		</band>
 	</pageHeader>
 	<detail>
-		<band height="38" splitType="Immediate">
+		<band height="36" splitType="Immediate">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
-				<reportElement style="SubHeadingClaim" positionType="Float" mode="Opaque" x="0" y="0" width="594" height="20" forecolor="#000000" uuid="e49cbec5-059c-4c17-af16-f8188c0f9ba6">
+				<reportElement style="SubHeadingClaim" positionType="Float" mode="Opaque" x="0" y="0" width="594" height="18" forecolor="#000000" uuid="e49cbec5-059c-4c17-af16-f8188c0f9ba6">
 					<property name="net.sf.jasperreports.export.html.id" value="SubHeadingYourDetails"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -98,7 +110,7 @@
 				<text><![CDATA[Your details]]></text>
 			</staticText>
 			<frame>
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="20" width="594" height="18" isRemoveLineWhenBlank="true" uuid="013ebf4c-8ccf-483d-bb9f-f79dbea6a8ab">
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="18" width="594" height="18" isRemoveLineWhenBlank="true" uuid="013ebf4c-8ccf-483d-bb9f-f79dbea6a8ab">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -110,13 +122,38 @@
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="f349b8c4-1b96-43bc-8f0c-6cbc18a22536">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
-					<textFieldExpression><![CDATA[T($F{IdentificationFullNameQuestion})]]></textFieldExpression>
+					<textFieldExpression><![CDATA[T($F{IdentificationFirstNameQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="a026fc1f-2823-41d2-83fc-8e840d66f350">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
-					<textFieldExpression><![CDATA[T($F{IdentificationFullNameAnswer})]]></textFieldExpression>
+					<textFieldExpression><![CDATA[T($F{IdentificationFirstNameAnswer})]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="18" splitType="Immediate">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<frame>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="0" width="594" height="18" isRemoveLineWhenBlank="true" uuid="013ebf4c-8ccf-483d-bb9f-f79dbea6a8ab">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="d9daae4d-0ca2-4b9e-8ebf-8daffb276d4f">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[T($F{IdentificationSurnameQuestion})]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="7486113f-73c7-4044-9559-54e3e5392078">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[T($F{IdentificationSurnameAnswer})]]></textFieldExpression>
 				</textField>
 			</frame>
 		</band>
@@ -126,6 +163,7 @@
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="0" width="594" height="18" isRemoveLineWhenBlank="true" uuid="1348c1eb-92e9-484f-9ca8-0d98f487c60d">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<box>
 					<bottomPen lineWidth="0.5"/>
@@ -150,6 +188,7 @@
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="0" width="594" height="18" isRemoveLineWhenBlank="true" uuid="d907d2f4-3f25-4ba5-9640-3365dd12abff">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<box>
 					<bottomPen lineWidth="0.5"/>
@@ -157,6 +196,7 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="f41ab462-0729-488e-a371-d493ee00691f">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{IdentificationDateOfBirthQuestion})]]></textFieldExpression>
 				</textField>
@@ -200,6 +240,7 @@
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="0" width="594" height="18" isRemoveLineWhenBlank="true" uuid="dd81cd06-4acb-49cd-93e9-1ee9303bb60c">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<box>
 					<bottomPen lineWidth="0.5"/>
@@ -222,7 +263,7 @@
 		<band height="36" splitType="Immediate">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<frame>
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="0" width="594" height="36" isRemoveLineWhenBlank="true" uuid="239aaadc-9dfb-4bf0-a6d9-534488ca5419">
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="0" width="594" height="18" isRemoveLineWhenBlank="true" uuid="239aaadc-9dfb-4bf0-a6d9-534488ca5419">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -251,8 +292,20 @@
 		</band>
 		<band height="38" splitType="Immediate">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement key="" style="SubHeadingClaim" positionType="Float" mode="Opaque" x="0" y="0" width="594" height="18" forecolor="#000000" uuid="6f3d68b4-20df-434a-ad7a-f3fecdfd8852">
+					<property name="net.sf.jasperreports.export.html.id" value="SubHeadingPersonYouAreCaringFor"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Person you are caring for]]></text>
+			</staticText>
 			<frame>
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="20" width="594" height="18" isRemoveLineWhenBlank="true" uuid="f8706912-85a4-470e-8585-ba45c153b8b6">
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="18" width="594" height="18" isRemoveLineWhenBlank="true" uuid="f8706912-85a4-470e-8585-ba45c153b8b6">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
@@ -264,27 +317,40 @@
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="8393c311-d36a-4588-b15f-340df86399d5">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
-					<textFieldExpression><![CDATA[T($F{IdentificationCareeFullNameQuestion})]]></textFieldExpression>
+					<textFieldExpression><![CDATA[T($F{IdentificationCareeFirstNameQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="a9a53a85-98d8-4077-9ebf-48dcc41d1d43">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
-					<textFieldExpression><![CDATA[T($F{IdentificationCareeFullNameAnswer})]]></textFieldExpression>
+					<textFieldExpression><![CDATA[T($F{IdentificationCareeFirstNameAnswer})]]></textFieldExpression>
 				</textField>
 			</frame>
-			<staticText>
-				<reportElement key="" style="SubHeadingClaim" positionType="Float" mode="Opaque" x="0" y="0" width="594" height="20" forecolor="#000000" uuid="6f3d68b4-20df-434a-ad7a-f3fecdfd8852">
-					<property name="net.sf.jasperreports.export.html.id" value="SubHeadingPersonYouAreCaringFor"/>
-					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+		</band>
+		<band height="18" splitType="Immediate">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<frame>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="0" width="594" height="18" isRemoveLineWhenBlank="true" uuid="7c74c7b9-9f93-44fc-8b4a-318598ff3e04">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
-				<textElement verticalAlignment="Middle" markup="styled">
-					<font isBold="true"/>
-				</textElement>
-				<text><![CDATA[Person you are caring for]]></text>
-			</staticText>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="78967557-618e-4eb4-b599-1069ea6a6911">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[T($F{IdentificationCareeSurnameQuestion})]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="f625aaa7-8d78-478e-9bfd-1f771d20788d">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[T($F{IdentificationCareeSurnameAnswer})]]></textFieldExpression>
+				</textField>
+			</frame>
 		</band>
 		<band height="18" splitType="Immediate">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -292,6 +358,7 @@
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="0" width="594" height="18" isRemoveLineWhenBlank="true" uuid="63929045-bc38-4e4b-8c92-a51a9a29dbeb">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<box>
 					<bottomPen lineWidth="0.5"/>
