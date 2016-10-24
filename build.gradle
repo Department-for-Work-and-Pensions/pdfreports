@@ -1,7 +1,4 @@
 buildscript {
-    ext {
-        springBootVersion = '1.4.0.RELEASE'
-    }
     repositories {
         mavenLocal()
         //jcenter()
@@ -24,7 +21,6 @@ buildscript {
     }
     dependencies {
         classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.0.0')
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
         classpath('com.github.gmazelier:jasperreports-gradle-plugin:0.3.2'){
             exclude group: 'net.sf.jasperreports', module: 'jasperreports'
         }
@@ -39,9 +35,8 @@ allprojects {
     apply plugin: 'java'
     apply plugin: 'idea'
     apply plugin: 'maven-publish'
-    apply plugin: 'spring-boot'
     apply plugin: 'com.github.gmazelier.jasperreports'
-    version = '1.04-SNAPSHOT'
+    version = '1.05-SNAPSHOT'
     archivesBaseName = 'pdfreports'
     group = 'gov.dwp.carers'
     sourceCompatibility = 1.8
@@ -114,17 +109,10 @@ dependencies {
             "com.itextpdf:itextpdf:5.5.9",
             "com.adobe.xmp:xmpcore:5.1.2",
             "xalan:xalan:2.7.2",
-            "org.springframework.boot:spring-boot-starter-web",
-            "org.springframework.boot:spring-boot-starter-jetty",
-            "org.springframework.boot:spring-boot-starter-data-rest",
-            "org.springframework.boot:spring-boot-starter-web",
-            "org.springframework.boot:spring-boot-starter-websocket",
-            "org.springframework.boot:spring-boot-devtools",
             "net.sf.jasperreports:jasperreports-functions:6.2.2",
-            "org.springframework.boot:spring-boot-starter-actuator",
             "me.moocar:logback-gelf:0.3",
-            "org.springframework.boot:spring-boot-starter-test",
-            "org.assertj:assertj-core:3.2.0"
+            "org.assertj:assertj-core:3.2.0",
+            compile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '1.4.1.RELEASE')
     )
 }
 
