@@ -34,7 +34,7 @@
 				<textElement>
 					<paragraph lineSpacing="1_1_2"/>
 				</textElement>
-				<textFieldExpression><![CDATA[IF (!(T($F{Content}).startsWith("You") || T($F{Content}).startsWith("Include") || T($F{Content}).startsWith("By sending") || T($F{Content}).startsWith("When you") || T($F{Content}).startsWith("Read more") || T($F{Content}).startsWith("By reporting")),"  • " + T($F{Content}), T($F{Content}))]]></textFieldExpression>
+				<textFieldExpression><![CDATA[IF (!(T($F{Content}).startsWith("You") || T($F{Content}).startsWith("Include") || T($F{Content}).startsWith("By sending") || T($F{Content}).startsWith("When you") || T($F{Content}).startsWith("Read more") || T($F{Content}).startsWith("By reporting")),"  * " + T($F{Content}), T($F{Content}))]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
