@@ -85,8 +85,8 @@
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
 				<reportElement style="HeadingClaim" positionType="Float" mode="Opaque" x="0" y="0" width="594" height="20" forecolor="#000000" uuid="053a2fab-f18d-4813-bafc-26599d6f9738">
-					<property name="net.sf.jasperreports.export.html.id" value="HeadingIdentificationCarerAndPersonCaredFor"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="carer-heading"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle">
 					<font isBold="true"/>
@@ -103,6 +103,7 @@
 					<property name="net.sf.jasperreports.export.html.id" value="SubHeadingYourDetails"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="carer-yourdetails"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle" markup="styled">
 					<font isBold="true"/>
@@ -114,6 +115,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="carer-firstname-q"/>
 				</reportElement>
 				<box>
 					<bottomPen lineWidth="0.5"/>
@@ -127,6 +129,7 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="a026fc1f-2823-41d2-83fc-8e840d66f350">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-firstname-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{IdentificationFirstNameAnswer})]]></textFieldExpression>
 				</textField>
@@ -146,12 +149,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="d9daae4d-0ca2-4b9e-8ebf-8daffb276d4f">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-surname-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{IdentificationSurnameQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="7486113f-73c7-4044-9559-54e3e5392078">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-surname-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{IdentificationSurnameAnswer})]]></textFieldExpression>
 				</textField>
@@ -171,12 +176,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="3c1bb6a4-1447-4f70-abf4-22b7b1f41700">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-nino-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{IdentificationNationalInsuranceNumberQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="7c808242-645d-42e6-9353-a8883ea097f8">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-nino-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{IdentificationNationalInsuranceNumberAnswer})]]></textFieldExpression>
 				</textField>
@@ -197,12 +204,14 @@
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="f41ab462-0729-488e-a371-d493ee00691f">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-dob-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{IdentificationDateOfBirthQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="a3f745f4-78d3-44c1-9aba-855bd93527a3">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-dob-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{IdentificationDateOfBirthAnswer})]]></textFieldExpression>
 				</textField>
@@ -223,12 +232,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="e60f6436-2b18-4959-a91e-b15b5c6ff7f2">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-contact-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{DeclarationContactPreferenceQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="189e5fd1-a549-4097-b0cd-2b1b95171632">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-contact-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{DeclarationContactPreferenceAnswer})]]></textFieldExpression>
 				</textField>
@@ -249,12 +260,14 @@
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="e60f6436-2b18-4959-a91e-b15b5c6ff7f3">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-gotemail-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{DeclarationWantsContactEmailQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="189e5fd1-a549-4097-b0cd-2b1b95171634">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-gotemail-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{DeclarationWantsContactEmailAnswer})]]></textFieldExpression>
 				</textField>
@@ -274,6 +287,7 @@
 					<reportElement positionType="Float" x="0" y="0" width="594" height="18" isRemoveLineWhenBlank="true" uuid="e60f6436-2b18-4959-a91e-b15b5c6ff7f4">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-email-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{DeclarationEmailQuestion})]]></textFieldExpression>
 				</textField>
@@ -284,6 +298,7 @@
 						<property name="local_mesure_unitx" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.x" value="px"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-email-a"/>
 					</reportElement>
 					<textElement verticalAlignment="Top"/>
 					<textFieldExpression><![CDATA[T($F{DeclarationEmailAnswer})]]></textFieldExpression>
@@ -298,6 +313,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="caree-heading"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle" markup="styled">
 					<font isBold="true"/>
@@ -316,12 +332,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="8393c311-d36a-4588-b15f-340df86399d5">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="caree-firstname-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{IdentificationCareeFirstNameQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="a9a53a85-98d8-4077-9ebf-48dcc41d1d43">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="caree-firstname-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{IdentificationCareeFirstNameAnswer})]]></textFieldExpression>
 				</textField>
@@ -341,12 +359,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="78967557-618e-4eb4-b599-1069ea6a6911">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-surname-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{IdentificationCareeSurnameQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="f625aaa7-8d78-478e-9bfd-1f771d20788d">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-surname-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{IdentificationCareeSurnameAnswer})]]></textFieldExpression>
 				</textField>
@@ -366,12 +386,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="8fe56eae-661b-4090-8d7d-7e7ee498807b">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-relation-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{IdentificationCareeRelationToClaimantQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="7bb71e0a-e3bd-46ef-979f-e0b206d33017">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="carer-relation-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{IdentificationCareeRelationToClaimantAnswer})]]></textFieldExpression>
 				</textField>

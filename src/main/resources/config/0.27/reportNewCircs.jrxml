@@ -130,6 +130,7 @@
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="header-datetime"/>
 					</reportElement>
 					<textElement verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA["Date Received: "+T($F{DateTimeGenerated})]]></textFieldExpression>
@@ -138,6 +139,7 @@
 					<reportElement key="" positionType="Float" mode="Opaque" x="498" y="24" width="95" height="27" uuid="77460985-14a4-4310-90d0-cd3e0ed9bd27">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="header-version"/>
 					</reportElement>
 					<textElement textAlignment="Right" verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA[T($F{ClaimVersion}) + " / "+ T($F{Version})]]></textFieldExpression>
@@ -147,6 +149,7 @@
 						<property name="local_mesure_unitwidth" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="px"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="header-transactionid"/>
 					</reportElement>
 					<textElement verticalAlignment="Middle" markup="none">
 						<font isBold="true"/>
@@ -159,6 +162,7 @@
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="header-name"/>
 					</reportElement>
 					<textElement textAlignment="Left" verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA[T($F{ClaimantFirstName}+" "+$F{ClaimantSurname})]]></textFieldExpression>
@@ -167,6 +171,7 @@
 					<reportElement key="" positionType="Float" mode="Opaque" x="498" y="1" width="95" height="23" forecolor="#000000" uuid="b3d9caab-1c2a-4449-91b9-2d5647e1bb2a">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="header-nino"/>
 					</reportElement>
 					<textElement textAlignment="Right" verticalAlignment="Middle"/>
 					<textFieldExpression><![CDATA[T($F{NationalInsuranceNumber})]]></textFieldExpression>
@@ -180,6 +185,7 @@
 			<staticText>
 				<reportElement x="0" y="0" width="364" height="20" uuid="33f37f7e-ea89-47ec-9572-b60206334392">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="form-heading"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="true" isItalic="false"/>
@@ -189,6 +195,7 @@
 			<textField>
 				<reportElement key="" x="323" y="20" width="272" height="20" uuid="7fc54fa3-8e8e-49e3-b237-71e48d1d5de5">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="carer-language"/>
 				</reportElement>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA["This form was completed in "+T($F{LanguageUsed})]]></textFieldExpression>
