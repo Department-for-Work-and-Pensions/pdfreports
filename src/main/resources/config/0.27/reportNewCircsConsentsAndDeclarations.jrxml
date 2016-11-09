@@ -60,6 +60,7 @@
 				<reportElement style="HeadingClaim" positionType="Float" mode="Opaque" x="0" y="0" width="594" height="20" forecolor="#000000" uuid="596704e3-9e59-4fbb-9b16-80ada3080101">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="declare-header"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle" markup="styled">
 					<font isBold="true"/>
@@ -74,6 +75,7 @@
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement positionType="Float" x="0" y="20" width="595" height="20" isRemoveLineWhenBlank="true" uuid="b65fce80-b6b9-4f79-854d-b4c65363fa2a">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="declare-title"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[T($F{DeclarationTitle})]]></textFieldExpression>
 			</textField>
@@ -81,6 +83,7 @@
 				<reportElement key="" style="SubHeadingClaim" positionType="Float" mode="Opaque" x="0" y="0" width="594" height="20" forecolor="#000000" uuid="4f16af28-438e-480c-814c-5f1983e3871e">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="declare-declaration"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle">
 					<font isBold="true"/>
@@ -115,12 +118,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="5986dd83-bfaa-4cfb-a447-ba41835910dc">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="declare-someoneelse-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{DeclarationSomeOneElseQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="e7c1434d-ad02-4f93-abc8-9b18d0eccafa">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="declare-someoneelse-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{DeclarationSomeOneElseAnswer})]]></textFieldExpression>
 				</textField>
@@ -139,12 +144,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="e303aa26-c3a3-4e91-9a7d-f8d4fcd7b762">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="declare-org-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{DeclarationNameOrOrgQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="2cee7d1a-cbb2-44c4-960a-64a434d8de98">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="declare-org-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{DeclarationNameOrOrgAnswer})]]></textFieldExpression>
 				</textField>
@@ -162,12 +169,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="bb6aea67-bdba-481b-876d-5d7570e55523">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="declare-confirm-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{DeclarationConfirmQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="ea1d1099-fcf6-488a-a956-ac5976d55183">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="declare-confirm-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{DeclarationConfirmAnswer})]]></textFieldExpression>
 				</textField>
@@ -186,12 +195,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="891a97f1-6f6f-4e7e-8c3a-fc680efe1776">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="declare-consent-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{ConsentQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="f839f0ea-ea95-4972-a716-cc62d023ca3f">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="declare-consent-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{ConsentAnswer})]]></textFieldExpression>
 				</textField>
@@ -211,6 +222,7 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="594" height="18" isRemoveLineWhenBlank="true" uuid="b0faa3f6-b0ec-43f4-b65f-5b83582a627e">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="declare-consentwhy-q"/>
 						<printWhenExpression><![CDATA[!T($F{ConsentWhyQuestion}).isEmpty()]]></printWhenExpression>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{ConsentWhyQuestion})]]></textFieldExpression>
@@ -218,6 +230,7 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="0" y="18" width="594" height="18" isRemoveLineWhenBlank="true" uuid="e0c20ce0-7cc4-4431-8648-ae62bda7f9ff">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="declare-consentwhy-a"/>
 						<printWhenExpression><![CDATA[!T($F{ConsentWhyAnswer}).isEmpty()]]></printWhenExpression>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{ConsentWhyAnswer})]]></textFieldExpression>

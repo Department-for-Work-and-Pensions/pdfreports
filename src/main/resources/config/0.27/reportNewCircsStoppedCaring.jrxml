@@ -40,6 +40,7 @@
 					<property name="net.sf.jasperreports.export.html.id" value="HeadingChangeOfStoppedCaring"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="stopped-heading"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle" markup="styled">
 					<font isBold="true"/>
@@ -60,11 +61,15 @@
 					<bottomPen lineWidth="0.5"/>
 				</box>
 				<textField isBlankWhenNull="true">
-					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="561b3cf2-30b1-49b1-81af-70cbc565c40d"/>
+					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="561b3cf2-30b1-49b1-81af-70cbc565c40d">
+						<property name="net.sf.jasperreports.export.html.id" value="stopped-date-q"/>
+					</reportElement>
 					<textFieldExpression><![CDATA[T($F{StoppedCaringDateStoppedCaringQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isBlankWhenNull="true">
-					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="d2ecb442-b0bb-4f64-91bf-ab1e428758ea"/>
+					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="d2ecb442-b0bb-4f64-91bf-ab1e428758ea">
+						<property name="net.sf.jasperreports.export.html.id" value="stopped-date-a"/>
+					</reportElement>
 					<textFieldExpression><![CDATA[T($F{StoppedCaringDateStoppedCaringAnswer})]]></textFieldExpression>
 				</textField>
 			</frame>
@@ -82,12 +87,14 @@
 				<textField isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="594" height="18" isRemoveLineWhenBlank="true" uuid="6100bd8a-6c45-4534-9b8f-e4cc208368f9">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="stopped-more-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{StoppedCaringOtherChangesQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement key="" style="Answer" positionType="Float" x="0" y="18" width="594" height="18" isRemoveLineWhenBlank="true" uuid="ee95f6ed-b85b-494d-af25-78cb2baf2050">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="stopped-more-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{StoppedCaringOtherChangesAnswer})]]></textFieldExpression>
 				</textField>
