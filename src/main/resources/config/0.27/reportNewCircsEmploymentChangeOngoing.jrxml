@@ -438,6 +438,9 @@
 				<subreportParameter name="TEMPLATE_DIR">
 					<subreportParameterExpression><![CDATA[$P{TEMPLATE_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_IDSTUB">
+					<subreportParameterExpression><![CDATA["pension"]]></subreportParameterExpression>
+				</subreportParameter>
 				<subreportParameter name="OTHER_CHANGES_QUESTION">
 					<subreportParameterExpression><![CDATA[T($F{OngoingEmpPayIntoPensionWhatForQuestionLabel})]]></subreportParameterExpression>
 				</subreportParameter>
@@ -483,11 +486,14 @@
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
-				<subreportParameter name="OTHER_CHANGES_QUESTION">
-					<subreportParameterExpression><![CDATA[T($F{OngoingEmpPaidForThingsWhatForQuestionLabel})]]></subreportParameterExpression>
-				</subreportParameter>
 				<subreportParameter name="TEMPLATE_DIR">
 					<subreportParameterExpression><![CDATA[$P{TEMPLATE_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_IDSTUB">
+					<subreportParameterExpression><![CDATA["things"]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_QUESTION">
+					<subreportParameterExpression><![CDATA[T($F{OngoingEmpPaidForThingsWhatForQuestionLabel})]]></subreportParameterExpression>
 				</subreportParameter>
 				<subreportParameter name="OTHER_CHANGES_ANSWER">
 					<subreportParameterExpression><![CDATA[T($F{OngoingEmpPaidForThingsWhatForAnswer})]]></subreportParameterExpression>
@@ -534,6 +540,9 @@
 				<subreportParameter name="TEMPLATE_DIR">
 					<subreportParameterExpression><![CDATA[$P{TEMPLATE_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_IDSTUB">
+					<subreportParameterExpression><![CDATA["carecosts"]]></subreportParameterExpression>
+				</subreportParameter>
 				<subreportParameter name="OTHER_CHANGES_QUESTION">
 					<subreportParameterExpression><![CDATA[T($F{OngoingEmpCareCostsForThisWorkWhatCostsQuestionLabel})]]></subreportParameterExpression>
 				</subreportParameter>
@@ -555,6 +564,9 @@
 				</subreportParameter>
 				<subreportParameter name="TEMPLATE_DIR">
 					<subreportParameterExpression><![CDATA[$P{TEMPLATE_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_IDSTUB">
+					<subreportParameterExpression><![CDATA["other"]]></subreportParameterExpression>
 				</subreportParameter>
 				<subreportParameter name="OTHER_CHANGES_QUESTION">
 					<subreportParameterExpression><![CDATA[T($F{OngoingEmpMoreAboutChangesQuestionLabel})]]></subreportParameterExpression>

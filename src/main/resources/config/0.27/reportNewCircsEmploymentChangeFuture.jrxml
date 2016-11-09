@@ -412,6 +412,9 @@
 				<subreportParameter name="TEMPLATE_DIR">
 					<subreportParameterExpression><![CDATA[$P{TEMPLATE_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_IDSTUB">
+					<subreportParameterExpression><![CDATA["pension"]]></subreportParameterExpression>
+				</subreportParameter>
 				<subreportParameter name="OTHER_CHANGES_QUESTION">
 					<subreportParameterExpression><![CDATA[T($F{NotStartedPayIntoPensionWhatForQuestionLabel})]]></subreportParameterExpression>
 				</subreportParameter>
@@ -459,6 +462,9 @@
 				</subreportParameter>
 				<subreportParameter name="TEMPLATE_DIR">
 					<subreportParameterExpression><![CDATA[$P{TEMPLATE_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_IDSTUB">
+					<subreportParameterExpression><![CDATA["things"]]></subreportParameterExpression>
 				</subreportParameter>
 				<subreportParameter name="OTHER_CHANGES_QUESTION">
 					<subreportParameterExpression><![CDATA[T($F{NotStartedPayForThingsWhatForQuestionLabel})]]></subreportParameterExpression>
@@ -510,6 +516,9 @@
 				<subreportParameter name="TEMPLATE_DIR">
 					<subreportParameterExpression><![CDATA[$P{TEMPLATE_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_IDSTUB">
+					<subreportParameterExpression><![CDATA["carecosts"]]></subreportParameterExpression>
+				</subreportParameter>
 				<subreportParameter name="OTHER_CHANGES_QUESTION">
 					<subreportParameterExpression><![CDATA[T($F{NotStartedCareCostsForThisWorkWhatCostsQuestionLabel})]]></subreportParameterExpression>
 				</subreportParameter>
@@ -531,6 +540,9 @@
 				</subreportParameter>
 				<subreportParameter name="TEMPLATE_DIR">
 					<subreportParameterExpression><![CDATA[$P{TEMPLATE_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_IDSTUB">
+					<subreportParameterExpression><![CDATA["other"]]></subreportParameterExpression>
 				</subreportParameter>
 				<subreportParameter name="OTHER_CHANGES_QUESTION">
 					<subreportParameterExpression><![CDATA[T($F{NotStartedMoreAboutChangesQuestionLabel})]]></subreportParameterExpression>

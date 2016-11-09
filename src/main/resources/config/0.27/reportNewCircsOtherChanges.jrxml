@@ -13,6 +13,7 @@
 	<parameter name="TEMPLATE_DIR" class="java.lang.String">
 		<defaultValueExpression><![CDATA["./"]]></defaultValueExpression>
 	</parameter>
+	<parameter name="OTHER_CHANGES_IDSTUB" class="java.lang.String"/>
 	<parameter name="OTHER_CHANGES_QUESTION" class="java.lang.String"/>
 	<parameter name="OTHER_CHANGES_ANSWER" class="java.lang.String"/>
 	<detail>
@@ -29,14 +30,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="594" height="18" isRemoveLineWhenBlank="true" uuid="f4e34909-1e62-43b4-a047-f9078e7a19fb">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-						<property name="net.sf.jasperreports.export.html.id" value="otherchanges-q"/>
+						<propertyExpression name="net.sf.jasperreports.export.html.id"><![CDATA[$P{OTHER_CHANGES_IDSTUB}+"-q"]]></propertyExpression>
 					</reportElement>
 					<textFieldExpression><![CDATA[$P{OTHER_CHANGES_QUESTION}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="0" y="18" width="594" height="18" isRemoveLineWhenBlank="true" uuid="4c46ffe5-42e7-4218-8fc0-35f073214302">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-						<property name="net.sf.jasperreports.export.html.id" value="otherchanges-a"/>
+						<propertyExpression name="net.sf.jasperreports.export.html.id"><![CDATA[$P{OTHER_CHANGES_IDSTUB}+"-a"]]></propertyExpression>
 					</reportElement>
 					<textFieldExpression><![CDATA[$P{OTHER_CHANGES_ANSWER}]]></textFieldExpression>
 				</textField>
