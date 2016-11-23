@@ -36,7 +36,7 @@ allprojects {
     apply plugin: 'idea'
     apply plugin: 'maven-publish'
     apply plugin: 'com.github.gmazelier.jasperreports'
-    version = '1.06-SNAPSHOT'
+    version = '1.07-SNAPSHOT'
     archivesBaseName = 'pdfreports'
     group = 'gov.dwp.carers'
     sourceCompatibility = 1.8
