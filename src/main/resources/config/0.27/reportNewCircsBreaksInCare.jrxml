@@ -459,6 +459,9 @@
 				<subreportParameter name="TEMPLATE_DIR">
 					<subreportParameterExpression><![CDATA[$P{TEMPLATE_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_IDSTUB">
+					<subreportParameterExpression><![CDATA["break-other"]]></subreportParameterExpression>
+				</subreportParameter>
 				<subreportParameter name="OTHER_CHANGES_QUESTION">
 					<subreportParameterExpression><![CDATA[T($F{MoreChangesQuestionLabel})]]></subreportParameterExpression>
 				</subreportParameter>
@@ -482,6 +485,9 @@
 				</subreportParameter>
 				<subreportParameter name="TEMPLATE_DIR">
 					<subreportParameterExpression><![CDATA[$P{TEMPLATE_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_IDSTUB">
+					<subreportParameterExpression><![CDATA["break-another"]]></subreportParameterExpression>
 				</subreportParameter>
 				<subreportParameter name="OTHER_CHANGES_QUESTION">
 					<subreportParameterExpression><![CDATA[T($F{AdditionalBreaksNotReportedDescQuestionLabel})]]></subreportParameterExpression>
