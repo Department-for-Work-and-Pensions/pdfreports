@@ -88,6 +88,7 @@
 					<property name="net.sf.jasperreports.export.html.id" value="HeadingChangeOfPaymentAndBankDetails"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="pay-heading"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle">
 					<font isBold="true"/>
@@ -129,6 +130,7 @@
 						<property name="local_mesure_unitheight" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-intoaccount-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsPaidIntoAccountQuestion})]]></textFieldExpression>
 				</textField>
@@ -142,6 +144,7 @@
 						<property name="com.jaspersoft.studio.unit.width" value="px"/>
 						<property name="local_mesure_unitheight" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-intoaccount-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsPaidIntoAccountAnswer})]]></textFieldExpression>
 				</textField>
@@ -167,6 +170,7 @@
 						<property name="com.jaspersoft.studio.unit.width" value="px"/>
 						<property name="local_mesure_unitheight" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-oldbankname-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsBankNameQuestion})]]></textFieldExpression>
 				</textField>
@@ -180,6 +184,7 @@
 						<property name="com.jaspersoft.studio.unit.width" value="px"/>
 						<property name="local_mesure_unitheight" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-oldbankname-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsBankNameAnswer})]]></textFieldExpression>
 				</textField>
@@ -205,6 +210,7 @@
 						<property name="com.jaspersoft.studio.unit.width" value="px"/>
 						<property name="local_mesure_unitheight" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-method-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsMethodOfPaymentQuestion})]]></textFieldExpression>
 				</textField>
@@ -218,6 +224,7 @@
 						<property name="com.jaspersoft.studio.unit.width" value="px"/>
 						<property name="local_mesure_unitheight" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-method-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsMethodOfPaymentAnswer})]]></textFieldExpression>
 				</textField>
@@ -251,12 +258,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="3fe5f766-71db-4745-ba43-52a8b6906871">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-holder-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsHolderNameQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="01a99847-b387-4634-99a1-6c7611385114">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-holder-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsHolderNameAnswer})]]></textFieldExpression>
 				</textField>
@@ -275,12 +284,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="8184b9de-199e-4796-8009-7d1a66d2bb78">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-bankname-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsBuildingSocietyNameQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="4663022d-6a35-4775-a940-ed32eb05b1d6">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-bankname-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsBuildingSocietyNameAnswer})]]></textFieldExpression>
 				</textField>
@@ -299,12 +310,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="65b2b63a-5150-4c48-8e8e-8979ed83dec9">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-sortcode-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsSortCodeQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="50ad4bee-011a-4cb3-a098-34be3e377d7f">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-sortcode-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsSortCodeAnswer})]]></textFieldExpression>
 				</textField>
@@ -323,12 +336,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="d9c55998-80d0-4bba-82d4-2e47683c9347">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-account-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsAccountNumberQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="f245680d-e5ed-4da5-b724-335413e0e16f">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-account-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsAccountNumberAnswer})]]></textFieldExpression>
 				</textField>
@@ -347,12 +362,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="ad5ff319-4ff4-461f-a012-a67a5b1c736c">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-freq-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsPaymentFrequencyQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="f8be60bf-4b84-4148-80ea-4b83f20d5f7b">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-freq-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsPaymentFrequencyAnswer})]]></textFieldExpression>
 				</textField>
@@ -371,12 +388,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="d69b3ba7-59dd-4fb0-9805-43335563f06b">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-rollnum-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsRollNumberQuestion})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="ce4f3a46-d004-4846-a90e-b6a9abfcb1b3">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="pay-rollnum-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PaymentDetailsRollNumberAnswer})]]></textFieldExpression>
 				</textField>

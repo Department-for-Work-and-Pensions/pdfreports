@@ -117,6 +117,7 @@
 				<reportElement style="HeadingClaim" positionType="Float" mode="Opaque" x="0" y="0" width="595" height="20" forecolor="#000000" uuid="8f62fb47-d0a6-49f5-a1db-957558ba51a8">
 					<property name="net.sf.jasperreports.export.html.id" value="HeadingPart2CircsBreaksFromCaring"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="breaks-heading"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle" markup="styled">
 					<font isBold="true"/>
@@ -137,11 +138,15 @@
 					<bottomPen lineWidth="0.5"/>
 				</box>
 				<textField isBlankWhenNull="true">
-					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="59a010e4-a3c4-4e34-bbb6-7867de7dfd97"/>
+					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="59a010e4-a3c4-4e34-bbb6-7867de7dfd97">
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-startdate-q"/>
+    				</reportElement>
 					<textFieldExpression><![CDATA[T($F{RecentBreakStartDateQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isBlankWhenNull="true">
-					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="4716f5e0-8640-41e3-9239-5abc3fa68a63"/>
+					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="4716f5e0-8640-41e3-9239-5abc3fa68a63">
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-startdate-a"/>
+					</reportElement>
 					<textFieldExpression><![CDATA[T($F{RecentBreakStartDateAnswer})]]></textFieldExpression>
 				</textField>
 			</frame>
@@ -159,12 +164,14 @@
 				<textField isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="0ca184aa-d434-4280-8d35-ec8d6f2a640b">
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-starttime-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{RecentBreakStartTimeQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="a309821f-e28e-4713-833f-88fdfba156d1">
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-starttime-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{RecentBreakStartTimeAnswer})]]></textFieldExpression>
 				</textField>
@@ -184,6 +191,7 @@
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="a45c37cc-bd65-434e-a5aa-80a5921f0869">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-wherecaree-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{WherePersonYouCareQuestionLabel})]]></textFieldExpression>
 				</textField>
@@ -191,6 +199,7 @@
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="22856731-9409-4701-b14d-9fdbcc55813a">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-wherecaree-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{WherePersonYouCareAnswer})]]></textFieldExpression>
 				</textField>
@@ -198,6 +207,7 @@
 					<reportElement key="" style="Answer" positionType="Float" x="420" y="18" width="174" height="18" isRemoveLineWhenBlank="true" uuid="77f50fb3-356a-45c9-9c9a-14f9caec5ce7">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-wherecareeother-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{WherePersonYouCareSomewhereElse})]]></textFieldExpression>
 				</textField>
@@ -217,6 +227,7 @@
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="0a314def-8206-43a9-b66b-cb930ec82b25">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-whereyou-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{WhereWereYouQuestionLabel})]]></textFieldExpression>
 				</textField>
@@ -224,6 +235,7 @@
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="2c06a93c-b262-4d8d-ba3e-dc50f6c596af">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-whereyou-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{WhereWereYouAnswer})]]></textFieldExpression>
 				</textField>
@@ -231,6 +243,7 @@
 					<reportElement style="Answer" positionType="Float" x="420" y="18" width="174" height="18" isRemoveLineWhenBlank="true" uuid="97019eca-fcb9-40eb-a7e9-936a7a652ec7">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-whereyouother-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{WhereWereYouSomewhereElse})]]></textFieldExpression>
 				</textField>
@@ -250,6 +263,7 @@
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="eb4d73bb-2f8c-4988-989f-bce541090e8e">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-breakended-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{HasBreakFromCaringEndedQuestionLabel})]]></textFieldExpression>
 				</textField>
@@ -257,6 +271,7 @@
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="1e378c01-739f-4379-94b2-5001f5c1a5bc">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-breakended-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{HasBreakFromCaringEndedAnswer})]]></textFieldExpression>
 				</textField>
@@ -276,6 +291,7 @@
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="9babfee1-6214-496d-acb8-61fdd9a34633">
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-enddate-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EndDateQuestionLabel})]]></textFieldExpression>
 				</textField>
@@ -283,6 +299,7 @@
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="00895092-18cb-424c-aeec-94e284caa6f8">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-enddate-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EndDateAnswer})]]></textFieldExpression>
 				</textField>
@@ -302,6 +319,7 @@
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="aa6b2851-f69d-4074-8940-01baf439de61">
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-endtime-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EndTimeQuestionLabel})]]></textFieldExpression>
 				</textField>
@@ -309,6 +327,7 @@
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="1980a2d4-1649-4b67-9f24-cd4db1ef839d">
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-endtime-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EndTimeAnswer})]]></textFieldExpression>
 				</textField>
@@ -328,6 +347,7 @@
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="00d98fde-0e0f-4069-9f2e-9effebf47860">
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-careagain-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{ExpectStartCaringAgainQuestionLabel})]]></textFieldExpression>
 				</textField>
@@ -335,6 +355,7 @@
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="f2d40ff9-9909-464a-a0a8-83e261265fa5">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-careagain-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{ExpectStartCaringAgainAnswer})]]></textFieldExpression>
 				</textField>
@@ -354,6 +375,7 @@
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="8504caf8-2481-46ff-a264-5db7f757306d">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-careaagaindate-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{ExpectStartCaringAgainDateQuestionLabel})]]></textFieldExpression>
 				</textField>
@@ -361,6 +383,7 @@
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="85ac301f-08ee-4441-a94c-05edde66cc51">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-careaagaindate-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{ExpectStartCaringAgainDateAnswer})]]></textFieldExpression>
 				</textField>
@@ -380,6 +403,7 @@
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="d4c78e1e-4c27-4fb5-bc99-bc0e491a7b90">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-permanent-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PermanentBreakDateQuestionLabel})]]></textFieldExpression>
 				</textField>
@@ -387,6 +411,7 @@
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="39cd73e1-a698-4dc9-a18a-18d2a2c5fc29">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-permanent-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{PermanentBreakDateAnswer})]]></textFieldExpression>
 				</textField>
@@ -406,6 +431,7 @@
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="47cc14c0-b411-4cc7-a14e-ed6e583a7b81">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-treatment-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{MedicalTreatmentDuringBreakQuestionLabel})]]></textFieldExpression>
 				</textField>
@@ -413,6 +439,7 @@
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="4ce74b8f-ca9e-4c0b-82cb-cfcf085be5c1">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-treatment-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{MedicalTreatmentDuringBreakAnswer})]]></textFieldExpression>
 				</textField>
@@ -480,12 +507,14 @@
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="9f07f3b4-81e0-475a-b243-053bbafc288a">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-additional-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{AdditionalBreaksNotReportedQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="6eead6c1-18ed-49fc-a79a-f40d6f3b6a8a">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="breaks-additional-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{AdditionalBreaksNotReportedAnswer})]]></textFieldExpression>
 				</textField>

@@ -66,6 +66,7 @@
 				<reportElement style="HeadingClaim" mode="Opaque" x="0" y="0" width="594" height="20" forecolor="#000000" uuid="61d27c60-d23c-47b0-a56a-f72fe47dd241">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="address-heading"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle">
 					<font isBold="true"/>
@@ -113,12 +114,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="ac801cd2-efb7-4e36-bfc8-b084b41307e7">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="address-35hours-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{Caring35HoursQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="7f4ea2b9-240c-47d2-90bd-09a0b7304d30">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="address-35hours-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{Caring35HoursAnswer})]]></textFieldExpression>
 				</textField>
@@ -135,11 +138,15 @@
 					<bottomPen lineWidth="0.5"/>
 				</box>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="706a6621-ec6e-4d96-81ce-48cd32471c1e"/>
+					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="706a6621-ec6e-4d96-81ce-48cd32471c1e">
+						<property name="net.sf.jasperreports.export.html.id" value="address-stopped-q"/>
+					</reportElement>
 					<textFieldExpression><![CDATA[T($F{DateStoppedCaring35HoursQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="20941537-5b90-49f1-8e5f-4dbd17ca7049"/>
+					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="20941537-5b90-49f1-8e5f-4dbd17ca7049">
+						<property name="net.sf.jasperreports.export.html.id" value="address-stopped-a"/>
+					</reportElement>
 					<textFieldExpression><![CDATA[T($F{DateStoppedCaring35HoursAnswer})]]></textFieldExpression>
 				</textField>
 			</frame>
@@ -179,12 +186,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="bee6fad1-3671-4c73-8502-6d4b88218d30">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="address-careechanged-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{CareeChangedAddressQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="eedbfa39-5eff-4985-86f2-2025f1e1ff27">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="address-careechanged-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{CareeChangedAddressAnswer})]]></textFieldExpression>
 				</textField>
@@ -203,12 +212,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="ff2c91e2-f3f9-425d-b7c0-eade9d85c7ad">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="address-careesame-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{CareeSameAddressQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="b878b345-b9a0-4b28-9a3b-a63402a42008">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="address-careesame-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{CareeSameAddressAnswer})]]></textFieldExpression>
 				</textField>

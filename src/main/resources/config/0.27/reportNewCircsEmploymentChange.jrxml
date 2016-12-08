@@ -382,6 +382,7 @@
 					<property name="net.sf.jasperreports.export.html.id" value="HeadingPart2CircsBreaksFromCaring"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="employ-header"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle" markup="styled">
 					<font isBold="true"/>
@@ -402,12 +403,14 @@
 				<textField isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="59a010e4-a3c4-4e34-bbb6-7867de7dfd97">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-stillcare-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EmpChangeStillCaringQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="4716f5e0-8640-41e3-9239-5abc3fa68a63">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-stillcare-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EmpChangeStillCaringAnswer})]]></textFieldExpression>
 				</textField>
@@ -425,12 +428,14 @@
 				</box>
 				<textField isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="9c7b4ccd-9207-4c43-8932-32fab47a73d4">
+						<property name="net.sf.jasperreports.export.html.id" value="employ-stopcare-q"/>
 						<printWhenExpression><![CDATA[T($F{EmpChangeStillCaringAnswer}).equals("No")]]></printWhenExpression>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EmpChangeDateStoppedCaringQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="394b3d45-6239-4a50-bf37-f1380335ecc2">
+						<property name="net.sf.jasperreports.export.html.id" value="employ-stopcare-a"/>
 						<printWhenExpression><![CDATA[T($F{EmpChangeStillCaringAnswer}).equals("No")]]></printWhenExpression>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EmpChangeDateStoppedCaringAnswer})]]></textFieldExpression>
@@ -448,16 +453,18 @@
 					<bottomPen lineWidth="0.5"/>
 				</box>
 				<textField isBlankWhenNull="true">
-					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="c448f030-31f2-46ff-87b2-1b7fef982acd">
-						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-					</reportElement>
-					<textFieldExpression><![CDATA[T($F{EmpChangeHasWorkStartedYetAnswer})]]></textFieldExpression>
-				</textField>
-				<textField isBlankWhenNull="true">
 					<reportElement key="" positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="0b835f93-40a3-4e67-80c2-cdb2342a387c">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-started-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EmpChangeHasWorkStartedYetQuestionLabel})]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="c448f030-31f2-46ff-87b2-1b7fef982acd">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-started-a"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[T($F{EmpChangeHasWorkStartedYetAnswer})]]></textFieldExpression>
 				</textField>
 			</frame>
 		</band>
@@ -474,6 +481,7 @@
 				<textField isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="46631c88-d64e-4842-b6d5-b2511c3f8750">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-startdate-a"/>
 						<printWhenExpression><![CDATA[T($F{EmpChangeHasWorkStartedYetAnswer}).equals("Yes")]]></printWhenExpression>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EmpChangeDateWorkedStartedQuestionLabel})]]></textFieldExpression>
@@ -481,6 +489,7 @@
 				<textField isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="4fcb136a-dbfb-482e-8285-07152bda1440">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-startdate-a"/>
 						<printWhenExpression><![CDATA[T($F{EmpChangeHasWorkStartedYetAnswer}).equals("Yes")]]></printWhenExpression>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EmpChangeDateWorkedStartedAnswer})]]></textFieldExpression>
@@ -500,6 +509,7 @@
 				<textField isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="ddd5dc60-8ee4-4f36-9de3-a86c57774d6e">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-startdate-q"/>
 						<printWhenExpression><![CDATA[T($F{EmpChangeHasWorkStartedYetAnswer}).equals("No")]]></printWhenExpression>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EmpChangeDateWhenWillWorkStartQuestionLabel})]]></textFieldExpression>
@@ -507,6 +517,7 @@
 				<textField isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="4976a497-fe45-4ec9-8e83-760b798b4587">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-startdate-a"/>
 						<printWhenExpression><![CDATA[T($F{EmpChangeHasWorkStartedYetAnswer}).equals("No")]]></printWhenExpression>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EmpChangeDateWhenWillWorkStartAnswer})]]></textFieldExpression>
@@ -526,6 +537,7 @@
 				<textField isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="ebd69bf3-4ca2-4001-b66b-417f4e37b4a4">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-ended-q"/>
 						<printWhenExpression><![CDATA[T($F{EmpChangeHasWorkStartedYetAnswer}).equals("Yes")]]></printWhenExpression>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EmpChangeHasWorkFinishedYetQuestionLabel})]]></textFieldExpression>
@@ -533,6 +545,7 @@
 				<textField isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="c6d253b2-255f-4db3-8b7b-7fdd355dadca">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-ended-a"/>
 						<printWhenExpression><![CDATA[T($F{EmpChangeHasWorkStartedYetAnswer}).equals("Yes")]]></printWhenExpression>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EmpChangeHasWorkFinishedYetAnswer})]]></textFieldExpression>
@@ -552,6 +565,7 @@
 				<textField isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="75eb9208-a89b-4544-932a-9ab2a10741bb">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-enddate-q"/>
 						<printWhenExpression><![CDATA[T($F{EmpChangeHasWorkFinishedYetAnswer}).equals("Yes")]]></printWhenExpression>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EmpChangeDateWorkedFinishedQuestionLabel})]]></textFieldExpression>
@@ -559,6 +573,7 @@
 				<textField isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="72ef4b29-b024-482c-9fc4-5c27b6b68846">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-enddate-a"/>
 						<printWhenExpression><![CDATA[T($F{EmpChangeHasWorkFinishedYetAnswer}).equals("Yes")]]></printWhenExpression>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EmpChangeDateWorkedFinishedAnswer})]]></textFieldExpression>
@@ -578,12 +593,14 @@
 				<textField isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="fa674ca7-c75b-4561-be98-ecce39e063f5">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-type-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EmpChangeTypeOfWorkQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="e23bbebe-6b67-4c27-b5d3-49d8a4159ebe">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-type-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{EmpChangeTypeOfWorkAnswer})]]></textFieldExpression>
 				</textField>
@@ -596,6 +613,7 @@
 				<reportElement style="HeadingClaim" positionType="Float" mode="Opaque" x="0" y="0" width="595" height="20" forecolor="#000000" uuid="08c7b9ad-9096-49a4-834e-d6df80d37a6d">
 					<property name="net.sf.jasperreports.export.html.id" value="HeadingPart2CircsBreaksFromCaring"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="selfemploy-header"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle" markup="styled">
 					<font isBold="true"/>
@@ -614,12 +632,14 @@
 				<textField isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="0ccd7b92-d651-469a-803a-0e7a4d1f38c9">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="selfemploy-type-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{SelfEmpTypeOfSelfEmploymentQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="c242b8f4-b43a-4324-ab72-f59eea041c64">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="selfemploy-type-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{SelfEmpTypeOfSelfEmploymentAnswer})]]></textFieldExpression>
 				</textField>
@@ -637,11 +657,15 @@
 					<bottomPen lineWidth="0.5"/>
 				</box>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="6499a26c-3bce-4949-b772-0fc12c0f3238"/>
+					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="6499a26c-3bce-4949-b772-0fc12c0f3238">
+						<property name="net.sf.jasperreports.export.html.id" value="selfemploy-paid-q"/>
+					</reportElement>
 					<textFieldExpression><![CDATA[T($F{SelfEmpPaidYetQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="2126a0aa-c51a-4f2c-a495-a5cb8cae21e3"/>
+					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="2126a0aa-c51a-4f2c-a495-a5cb8cae21e3">
+						<property name="net.sf.jasperreports.export.html.id" value="selfemploy-paid-a"/>
+					</reportElement>
 					<textFieldExpression><![CDATA[T($F{SelfEmpPaidYetAnswer})]]></textFieldExpression>
 				</textField>
 			</frame>
@@ -658,11 +682,15 @@
 					<bottomPen lineWidth="0.5"/>
 				</box>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="b60e67e8-7f13-49fc-8179-94ed5f3ecf16"/>
+					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="b60e67e8-7f13-49fc-8179-94ed5f3ecf16">
+						<property name="net.sf.jasperreports.export.html.id" value="selfemploy-paiddate-q"/>
+					</reportElement>
 					<textFieldExpression><![CDATA[T($F{SelfEmpPaidDateQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="ccca45d3-cfb7-4679-a621-61697747e183"/>
+					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="ccca45d3-cfb7-4679-a621-61697747e183">
+						<property name="net.sf.jasperreports.export.html.id" value="selfemploy-paiddate-a"/>
+					</reportElement>
 					<textFieldExpression><![CDATA[T($F{SelfEmpPaidDateAnswer})]]></textFieldExpression>
 				</textField>
 			</frame>
@@ -679,11 +707,15 @@
 					<bottomPen lineWidth="0.5"/>
 				</box>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="6499a26c-3bce-4949-b772-0fc12c0f3238"/>
+					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="6499a26c-3bce-4949-b772-0fc12c0f3238">
+						<property name="net.sf.jasperreports.export.html.id" value="selfemploy-income-q"/>
+					</reportElement>
 					<textFieldExpression><![CDATA[T($F{SelfEmpTotalIncomeQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="2126a0aa-c51a-4f2c-a495-a5cb8cae21e3"/>
+					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="2126a0aa-c51a-4f2c-a495-a5cb8cae21e3">
+						<property name="net.sf.jasperreports.export.html.id" value="selfemploy-income-a"/>
+					</reportElement>
 					<textFieldExpression><![CDATA[T($F{SelfEmpTotalIncomeAnswer})]]></textFieldExpression>
 				</textField>
 			</frame>

@@ -134,6 +134,7 @@
 					<property name="net.sf.jasperreports.export.html.id" value="HeadingPart2CircsBreaksFromCaring"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="net.sf.jasperreports.export.html.id" value="employ-subheading"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle" markup="styled">
 					<font isBold="true"/>
@@ -152,12 +153,14 @@
 				<textField isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="7d4040b7-2924-44a2-a6a0-2b71db9e99bb">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-name-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpNameQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="43c48463-d859-4085-b4c8-53acc78a8cab">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-name-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpNameAnswer})]]></textFieldExpression>
 				</textField>
@@ -197,12 +200,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="7e3040b7-1924-43a2-a6a0-2b71db9e99bb">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-contact-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpEmployerContactNumberQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="43c48463-d859-4085-b4c8-53acc78a816d">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-contact-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpEmployerContactNumberAnswer})]]></textFieldExpression>
 				</textField>
@@ -219,11 +224,15 @@
 					<bottomPen lineWidth="0.5"/>
 				</box>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="7037f9d7-a80c-44ca-b2cc-a54f81c6bebf"/>
+					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="7037f9d7-a80c-44ca-b2cc-a54f81c6bebf">
+						<property name="net.sf.jasperreports.export.html.id" value="employ-empnum-q"/>
+					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpEmployerPayrollQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="c4802aa8-dbd0-4b0e-bc7c-7000de6ac3b4"/>
+					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="c4802aa8-dbd0-4b0e-bc7c-7000de6ac3b4">
+						<property name="net.sf.jasperreports.export.html.id" value="employ-empnum-a"/>
+					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpEmployerPayrollAnswer})]]></textFieldExpression>
 				</textField>
 			</frame>
@@ -241,12 +250,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="ab700ba1-23f5-41cc-8ad7-8a1c935f4845">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-paid-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpBeenPaidYetQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="21bbd370-c436-4723-91c2-4b0d35e3d83e">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-paid-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpBeenPaidYetAnswer})]]></textFieldExpression>
 				</textField>
@@ -265,12 +276,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="27600381-8434-40db-88ce-315a3be86de9">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-howmuch-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpHowMuchPaidQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="bdf5ff2b-9665-4459-a3c0-e067f70ec5f0">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-howmuch-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpHowMuchPaidAnswer})]]></textFieldExpression>
 				</textField>
@@ -289,12 +302,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="73af0ee4-221a-4226-b3b1-bac6cd1b60c2">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-paydate-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpPaymentDateQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="f1bc23fc-2f04-42d2-ac97-8d8a7789ea66">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-paydate-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpPaymentDateAnswer})]]></textFieldExpression>
 				</textField>
@@ -313,18 +328,21 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="a92e4235-5fd0-473f-b25a-8f9534e60bfc">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-freq-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpPayFrequencyQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="507c2029-1266-417a-87a5-6bb8f56ef995">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-freq-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpPayFrequencyAnswer})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="18" width="174" height="18" isRemoveLineWhenBlank="true" uuid="4d064dfa-0242-4e61-bca6-9c2c7f5efd17">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-freqother-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpPayFrequencyOtherAnswer})]]></textFieldExpression>
 				</textField>
@@ -343,12 +361,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="490bc1d1-d678-48da-a8b8-2e621cc294d7">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-payday-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpMonthlyPayDayQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="f29baa2a-c9e7-4099-a694-85c855b7a7a0">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-payday-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpMonthlyPayDayAnswer})]]></textFieldExpression>
 				</textField>
@@ -367,12 +387,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="1d3a72b6-49bb-4740-a26a-18c387c988e8">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-paidsame-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpUsuallyPaidSameAmountQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="77e4180d-3858-4979-bd9d-198b4658160a">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-paidsame-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpUsuallyPaidSameAmountAnswer})]]></textFieldExpression>
 				</textField>
@@ -391,12 +413,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="f588d94c-08bf-4db2-8939-0a86b55bacbc">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-pension-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpPayIntoPensionQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="52000e0a-4939-4a15-9630-8462eb111f42">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-pension-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpPayIntoPensionAnswer})]]></textFieldExpression>
 				</textField>
@@ -413,6 +437,9 @@
 				</subreportParameter>
 				<subreportParameter name="TEMPLATE_DIR">
 					<subreportParameterExpression><![CDATA[$P{TEMPLATE_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_IDSTUB">
+					<subreportParameterExpression><![CDATA["pension"]]></subreportParameterExpression>
 				</subreportParameter>
 				<subreportParameter name="OTHER_CHANGES_QUESTION">
 					<subreportParameterExpression><![CDATA[T($F{OngoingEmpPayIntoPensionWhatForQuestionLabel})]]></subreportParameterExpression>
@@ -437,12 +464,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="1bd76ca6-66d8-4ac0-a7ce-b1ba7c303c2c">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-paidthings-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpPaidForThingsQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="80232bbd-9439-463d-b15d-5f86cdbf2963">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-paidthings-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpPaidForThingsAnswer})]]></textFieldExpression>
 				</textField>
@@ -457,11 +486,14 @@
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
-				<subreportParameter name="OTHER_CHANGES_QUESTION">
-					<subreportParameterExpression><![CDATA[T($F{OngoingEmpPaidForThingsWhatForQuestionLabel})]]></subreportParameterExpression>
-				</subreportParameter>
 				<subreportParameter name="TEMPLATE_DIR">
 					<subreportParameterExpression><![CDATA[$P{TEMPLATE_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_IDSTUB">
+					<subreportParameterExpression><![CDATA["things"]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_QUESTION">
+					<subreportParameterExpression><![CDATA[T($F{OngoingEmpPaidForThingsWhatForQuestionLabel})]]></subreportParameterExpression>
 				</subreportParameter>
 				<subreportParameter name="OTHER_CHANGES_ANSWER">
 					<subreportParameterExpression><![CDATA[T($F{OngoingEmpPaidForThingsWhatForAnswer})]]></subreportParameterExpression>
@@ -483,12 +515,14 @@
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement positionType="Float" x="0" y="0" width="392" height="18" isRemoveLineWhenBlank="true" uuid="d8860fe9-d4e1-4b13-9d0b-3a33ea711f51">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-gotcarecosts-q"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpCareCostsForThisWorkQuestionLabel})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="78f63d80-3735-483b-8c94-8a41115f259a">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="net.sf.jasperreports.export.html.id" value="employ-gotcarecosts-a"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[T($F{OngoingEmpCareCostsForThisWorkAnswer})]]></textFieldExpression>
 				</textField>
@@ -505,6 +539,9 @@
 				</subreportParameter>
 				<subreportParameter name="TEMPLATE_DIR">
 					<subreportParameterExpression><![CDATA[$P{TEMPLATE_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_IDSTUB">
+					<subreportParameterExpression><![CDATA["carecosts"]]></subreportParameterExpression>
 				</subreportParameter>
 				<subreportParameter name="OTHER_CHANGES_QUESTION">
 					<subreportParameterExpression><![CDATA[T($F{OngoingEmpCareCostsForThisWorkWhatCostsQuestionLabel})]]></subreportParameterExpression>
@@ -527,6 +564,9 @@
 				</subreportParameter>
 				<subreportParameter name="TEMPLATE_DIR">
 					<subreportParameterExpression><![CDATA[$P{TEMPLATE_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_IDSTUB">
+					<subreportParameterExpression><![CDATA["other"]]></subreportParameterExpression>
 				</subreportParameter>
 				<subreportParameter name="OTHER_CHANGES_QUESTION">
 					<subreportParameterExpression><![CDATA[T($F{OngoingEmpMoreAboutChangesQuestionLabel})]]></subreportParameterExpression>
