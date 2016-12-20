@@ -7,7 +7,7 @@ node ('master') {
     artifactoryGradle.deployer.ivyPattern = '[organisation]/[module]/ivy-[revision].xml'
     artifactoryGradle.deployer.artifactPattern = '[organisation]/[module]/[revision]/[artifact]-[revision](-[classifier]).[ext]'
     artifactoryGradle.deployer.mavenCompatible = true
-    artifactoryGradle.deployer.artifactDeploymentPatterns.addInclude("*.zip,*.jar")
+    artifactoryGradle.deployer.artifactDeploymentPatterns.addInclude("*.jar")
     artifactoryGradle.deployer.usesPlugin = true
 
     def buildInfo = Artifactory.newBuildInfo()
