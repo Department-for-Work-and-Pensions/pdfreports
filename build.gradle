@@ -20,7 +20,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.0.0')
+        classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.4.9')
         classpath('com.github.gmazelier:jasperreports-gradle-plugin:0.3.2'){
             exclude group: 'net.sf.jasperreports', module: 'jasperreports'
         }
@@ -79,6 +79,13 @@ repositories {
     mavenLocal()
     mavenCentral()
     maven {
+        url "${artifactory_url}repo"
+        credentials {
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+        }
+    }
+    maven {
         url 'http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts/'
     }
     maven {
@@ -101,7 +108,7 @@ configurations.all {
 //Project dependencies
 dependencies {
     testCompile(
-            "gov.dwp.carers:p1:4.01-SNAPSHOT",
+            "gov.dwp.carers:p1:4.05-SNAPSHOT",
             "gov.dwp.carers:fonts:1.0",
             "gov.dwp.carers:xmlcommons:8.22-SNAPSHOT",
             "gov.dwp.carers:carerscommon:8.05-SNAPSHOT",
