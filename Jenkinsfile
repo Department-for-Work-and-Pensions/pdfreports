@@ -25,7 +25,7 @@ node ('master') {
         try {
             artifactoryGradle.run switches: '-Dgradle.user.home=$JENKINS_HOME/.gradle', buildFile: 'build.gradle', tasks: 'clean test build sourcesJar artifactoryPublish', buildInfo: buildInfo, server: server
             publishHTML([allowMissing: true, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'build/reports/tests/test/', reportFiles: 'index.html', reportName: 'Test Report'])
-            junit keepLongStdio: true, testResults: 'build/test-results/test/*.xml'
+            junit allowEmptyResults: true, keepLongStdio: true, testResults: 'build/test-results/test/*.xml'
         } catch (Exception e) {
             publishHTML([allowMissing: true, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'build/reports/tests/test/', reportFiles: 'index.html', reportName: 'Test Report'])
             junit allowEmptyResults: true, keepLongStdio: true, testResults: 'build/test-results/test/*.xml'
