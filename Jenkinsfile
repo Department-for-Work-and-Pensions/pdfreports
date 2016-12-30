@@ -38,7 +38,7 @@ node ('master') {
     if (env.BRANCH_NAME == 'integration') {
         stage ('Deploy to lab') {
             sshagent(['8b4a081b-f1d6-424d-959f-ae9279d08b3b']) {
-                sh 'scp build/libs/pdfreports-*-SNAPSHOT-full.jar p1lab@37.26.89.94:pdfreports/pdfreports-latest-SNAPSHOT-full.jar'
+                sh 'scp build/libs/pdfreports-*-SNAPSHOT.jar p1lab@37.26.89.94:pdfreports/pdfreports-latest-SNAPSHOT.jar'
                 sh 'ssh p1lab@37.26.89.94 "./deploy.sh restart > output.log 2>&1 &"'
             }
         }
