@@ -259,6 +259,9 @@
 				<subreportParameter name="TEMPLATE_DIR">
 					<subreportParameterExpression><![CDATA[$P{TEMPLATE_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
+				<subreportParameter name="OTHER_CHANGES_IDSTUB">
+					<subreportParameterExpression><![CDATA["address-other"]]></subreportParameterExpression>
+				</subreportParameter>
 				<subreportParameter name="OTHER_CHANGES_QUESTION">
 					<subreportParameterExpression><![CDATA[T($F{OtherChangesQuestionLabel})]]></subreportParameterExpression>
 				</subreportParameter>
