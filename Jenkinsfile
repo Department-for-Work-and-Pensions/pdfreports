@@ -54,7 +54,7 @@ node ('master') {
         server.publishBuildInfo buildInfo
     }
     stage ('Build service RedHat package') {
-        sh "fpm -s dir -t rpm --name ${app_name}-${app_ver} --version ${env.BUILD_NUMBER} --prefix /data/carers/${app_name}/${app_name}-${app_ver} build/libs/${app_name}-${app_ver}-full.jar=/"
+        sh "fpm -s dir -t rpm --name ${app_name}-${app_ver} --version ${env.BUILD_NUMBER} --prefix /data/carers/${app_name}/${app_name}-${app_ver} build/libs/${app_name}-${app_ver}.jar=/"
     }
     if (env.BRANCH_NAME == 'integration') {
         stage ('Deploy to lab') {
