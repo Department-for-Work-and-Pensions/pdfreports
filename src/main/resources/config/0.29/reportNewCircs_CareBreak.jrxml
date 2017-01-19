@@ -116,6 +116,24 @@
 	<field name="BreakStartedQuestionLabel" class="java.lang.String">
 		<fieldDescription><![CDATA[BreakStarted/QuestionLabel]]></fieldDescription>
 	</field>
+	<field name="ExpectToCareAgainAnswer" class="java.lang.String">
+		<fieldDescription><![CDATA[ExpectToCareAgain/Answer]]></fieldDescription>
+	</field>
+	<field name="ExpectToCareAgainQuestionLabel" class="java.lang.String">
+		<fieldDescription><![CDATA[ExpectToCareAgain/QuestionLabel]]></fieldDescription>
+	</field>
+	<field name="ExpectToCareAgainDateAnswer" class="java.lang.String">
+		<fieldDescription><![CDATA[ExpectToCareAgainDate/Answer]]></fieldDescription>
+	</field>
+	<field name="ExpectToCareAgainDateQuestionLabel" class="java.lang.String">
+		<fieldDescription><![CDATA[ExpectToCareAgainDate/QuestionLabel]]></fieldDescription>
+	</field>
+	<field name="StopCaringDecisionDateAnswer" class="java.lang.String">
+		<fieldDescription><![CDATA[StopCaringDecisionDate/Answer]]></fieldDescription>
+	</field>
+	<field name="StopCaringDecisionDateQuestionLabel" class="java.lang.String">
+		<fieldDescription><![CDATA[StopCaringDecisionDate/QuestionLabel]]></fieldDescription>
+	</field>
 	<variable name="variable1" class="java.lang.Integer" incrementType="Group" incrementGroup="Break">
 		<variableExpression><![CDATA[$V{variable1}+1]]></variableExpression>
 		<initialValueExpression><![CDATA[-1]]></initialValueExpression>
