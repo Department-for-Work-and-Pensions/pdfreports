@@ -20,15 +20,18 @@ buildscript {
         }
     }
     dependencies {
-        classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.0.0')
+        classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.4.9')
         classpath('com.github.gmazelier:jasperreports-gradle-plugin:0.3.2'){
             exclude group: 'net.sf.jasperreports', module: 'jasperreports'
         }
         classpath("net.sf.jasperreports:jasperreports:6.2.2")
         classpath("com.itextpdf:itextpdf:5.5.9")
         classpath("net.sf.jasperreports:jasperreports-functions:6.2.2")
+        classpath 'com.kenshoo:gradle-fpm:0.5'
     }
 }
+
+String candidate = "$System.env.BRANCH_NAME".contentEquals('feature/future') ? 'RELEASE' : 'SNAPSHOT'
 
 allprojects {
     apply plugin: 'com.jfrog.artifactory'
@@ -36,7 +39,8 @@ allprojects {
     apply plugin: 'idea'
     apply plugin: 'maven-publish'
     apply plugin: 'com.github.gmazelier.jasperreports'
-    version = '1.09-SNAPSHOT'
+    apply plugin: 'fpm-packaging'
+    version = "1.10-${candidate}"
     archivesBaseName = 'pdfreports'
     group = 'gov.dwp.carers'
     sourceCompatibility = 1.8
@@ -79,6 +83,13 @@ repositories {
     mavenLocal()
     mavenCentral()
     maven {
+        url "${artifactory_url}repo"
+        credentials {
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+        }
+    }
+    maven {
         url 'http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts/'
     }
     maven {
@@ -101,7 +112,7 @@ configurations.all {
 //Project dependencies
 dependencies {
     testCompile(
-            "gov.dwp.carers:p1:4.01-SNAPSHOT",
+            "gov.dwp.carers:p1:4.05-SNAPSHOT",
             "gov.dwp.carers:fonts:1.0",
             "gov.dwp.carers:xmlcommons:8.22-SNAPSHOT",
             "gov.dwp.carers:carerscommon:8.05-SNAPSHOT",
@@ -128,6 +139,16 @@ publishing {
         }
     }
 }
+
+
+rpm {
+    packageName = "${archivesBaseName}-${version}" // Optional, default is project.name
+    baseDir = "${project.buildDir}/build/libs" // Optional, base directory to package, default: project.buildDir
+    prefix =  "/data/carers/${archivesBaseName}/${archivesBaseName}-${version}" // Optional, a path to prefix files when building package, default: root (/)
+    extraOptions = ['--vendor': 'DWP', '--maintainer': 'CADS Team'] // Optional, a map containing extra options
+    extraFlags   = ['--rpm-auto-add-directories'] // Optional, a list of additional flags to fpm
+}
+
 
 task sourcesJar(type: Jar, dependsOn: classes) {
     classifier = 'sources'
