@@ -233,7 +233,7 @@
 							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 							<propertyExpression name="net.sf.jasperreports.export.html.id"><![CDATA["breaks-"+IF($V{variable1}==-1, "head", "foot")+"-anyother-q"]]></propertyExpression>
 						</reportElement>
-						<textFieldExpression><![CDATA[T("$F{BreaksMoreAboutQuestionLabel}).replace("@dpname",$P{dpname})]]></textFieldExpression>
+						<textFieldExpression><![CDATA[T($F{BreaksMoreAboutQuestionLabel}).replace("@dpname",$P{dpname})]]></textFieldExpression>
 					</textField>
 					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 						<reportElement key="" style="Answer" positionType="Float" x="420" y="0" width="174" height="18" isRemoveLineWhenBlank="true" uuid="780dc54f-3aa4-4d11-885d-3f5a935dea64">
