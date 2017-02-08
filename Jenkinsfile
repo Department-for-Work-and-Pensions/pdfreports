@@ -28,7 +28,7 @@ node ('master') {
     }
 
     def gradletool = tool name: 'Gradle321', type: 'hudson.plugins.gradle.GradleInstallation'
-    def gradlebin = "${gradletool}/bin/gradle -Dgradle.user.home=$JENKINS_HOME/.gradle"
+    def gradlebin = "${gradletool}/bin/gradle -Dgradle.user.home=$JENKINS_HOME/.gradle --no-daemon"
 
     def app_name = sh (
         script: "${gradlebin} properties | grep name | awk '{print \$2}'",
@@ -41,7 +41,7 @@ node ('master') {
 
     stage ('Gradle build and test') {
         try {
-            artifactoryGradle.run switches: '-Dgradle.user.home=$JENKINS_HOME/.gradle', buildFile: 'build.gradle', tasks: 'clean test build sourcesJar artifactoryPublish', buildInfo: buildInfo, server: server
+            artifactoryGradle.run switches: '-Dgradle.user.home=$JENKINS_HOME/.gradle --no-daemon', buildFile: 'build.gradle', tasks: 'clean test build sourcesJar artifactoryPublish', buildInfo: buildInfo, server: server
             publishHTML([allowMissing: true, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'build/reports/tests/test/', reportFiles: 'index.html', reportName: 'Test Report'])
             junit allowEmptyResults: true, keepLongStdio: true, testResults: 'build/test-results/test/*.xml'
         } catch (Exception e) {
