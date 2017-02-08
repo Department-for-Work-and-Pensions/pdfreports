@@ -2,6 +2,7 @@ node ('master') {
     def server = Artifactory.server('newlab-artifactory')
     def artifactoryGradle = Artifactory.newGradleBuild()
     artifactoryGradle.tool = 'Gradle321' // Tool name from Jenkins configuration
+    artifactoryGradle.usesPlugin = true
     artifactoryGradle.resolver repo:'repo', server: server
     if (env.BRANCH_NAME == 'integration') {
         artifactoryGradle.deployer repo:'libs-snapshot-local', server: server
@@ -12,7 +13,6 @@ node ('master') {
     artifactoryGradle.deployer.ivyPattern = '[organisation]/[module]/ivy-[revision].xml'
     artifactoryGradle.deployer.artifactPattern = '[organisation]/[module]/[revision]/[artifact]-[revision](-[classifier]).[ext]'
     artifactoryGradle.deployer.mavenCompatible = true
-    artifactoryGradle.deployer.usesPlugin = true
 
     def buildInfo = Artifactory.newBuildInfo()
     buildInfo.env.capture = true
