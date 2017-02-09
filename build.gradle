@@ -20,7 +20,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.4.9')
+        classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.4.13')
         classpath('com.github.gmazelier:jasperreports-gradle-plugin:0.3.2'){
             exclude group: 'net.sf.jasperreports', module: 'jasperreports'
         }
@@ -31,6 +31,8 @@ buildscript {
     }
 }
 
+String candidate = "$System.env.BRANCH_NAME".contentEquals('feature/future') ? 'RELEASE' : 'SNAPSHOT'
+
 allprojects {
     apply plugin: 'com.jfrog.artifactory'
     apply plugin: 'java'
@@ -38,7 +40,7 @@ allprojects {
     apply plugin: 'maven-publish'
     apply plugin: 'com.github.gmazelier.jasperreports'
     apply plugin: 'fpm-packaging'
-    version = '1.10-SNAPSHOT'
+    version = "1.10-${candidate}"
     archivesBaseName = 'pdfreports'
     group = 'gov.dwp.carers'
     sourceCompatibility = 1.8
@@ -140,7 +142,7 @@ publishing {
 
 
 rpm {
-    packageName = "${archivesBaseName}" // Optional, default is project.name
+    packageName = "${archivesBaseName}-${version}" // Optional, default is project.name
     baseDir = "${project.buildDir}/build/libs" // Optional, base directory to package, default: project.buildDir
     prefix =  "/data/carers/${archivesBaseName}/${archivesBaseName}-${version}" // Optional, a path to prefix files when building package, default: root (/)
     extraOptions = ['--vendor': 'DWP', '--maintainer': 'CADS Team'] // Optional, a map containing extra options
