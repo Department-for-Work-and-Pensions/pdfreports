@@ -1,7 +1,8 @@
 buildscript {
     repositories {
         mavenLocal()
-        //jcenter()
+        jcenter()
+        mavenCentral()
         maven {
             url "${artifactory_url}repo"
             credentials {
