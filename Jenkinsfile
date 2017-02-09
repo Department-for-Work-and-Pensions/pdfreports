@@ -1,4 +1,10 @@
 node ('master') {
+
+    properties([
+        buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '10', numToKeepStr: '5')),
+  ])
+
+
     def server = Artifactory.server('newlab-artifactory')
     def artifactoryGradle = Artifactory.newGradleBuild()
     artifactoryGradle.tool = 'Gradle321' // Tool name from Jenkins configuration
